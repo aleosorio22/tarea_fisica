@@ -3,110 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investigaciones Electrónica</title>
+    <title>Investigaciones Electrónica - 0905-23-10736</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2f3;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
             text-align: center;
             margin: 20px;
         }
         .container {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
+            color: black;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
             margin: auto;
+            animation: fadeIn 1s ease-in-out;
         }
         button {
             margin: 10px;
             padding: 12px 20px;
-            background-color: #007BFF;
+            background: #ff6600;
             color: white;
             border: none;
             cursor: pointer;
             border-radius: 5px;
             font-size: 16px;
-            transition: background 0.3s;
+            transition: transform 0.3s;
         }
         button:hover {
-            background-color: #0056b3;
+            background: #cc5200;
+            transform: scale(1.05);
         }
         .hidden {
             display: none;
         }
         h2, h3 {
-            color: #333;
+            color: #003366;
         }
         ul {
             text-align: left;
             margin: 0 auto;
-            max-width: 600px;
+            max-width: 700px;
             padding: 0;
         }
         li {
             margin-bottom: 10px;
         }
         a {
-            color: #007BFF;
+            color: #ff6600;
             text-decoration: none;
             font-weight: bold;
         }
         a:hover {
             text-decoration: underline;
         }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Investigaciones de Electricidad y Electrónica</h1>
+        <h3>Nombre: Rene Alejandro Osorio Gonzalez - Carnet: 0905-23-10736</h3>
         <button onclick="mostrarInvestigacion('investigacion1')">Tipos de Componentes Electrónicos</button>
         <button onclick="mostrarInvestigacion('investigacion2')">Glosario de Términos</button>
         
         <div id="investigacion1" class="hidden">
             <h2>Tipos de Componentes Electrónicos</h2>
             <h3>Tipos de Resistencias</h3>
-            <p>Las resistencias pueden ser de carbón, película metálica, de hilo bobinado y de óxido metálico. Se utilizan para limitar la corriente en circuitos eléctricos.</p>
-            <p>Las resistencias de película metálica son más precisas, mientras que las de carbón son más económicas. Las de hilo bobinado son ideales para manejar altas potencias.</p>
-            
+            <p>Las resistencias son dispositivos diseñados para limitar el flujo de corriente en un circuito. Dependiendo de su composición y aplicación, se clasifican en:</p>
+            <ul>
+                <li><strong>Resistencias de carbón:</strong> Utilizan una mezcla de carbono y aglutinantes. Son económicas y se encuentran en circuitos de baja precisión.</li>
+                <li><strong>Resistencias de película metálica:</strong> Hechas de una delgada capa de metal sobre un sustrato cerámico. Son más precisas y estables.</li>
+                <li><strong>Resistencias de hilo bobinado:</strong> Se componen de un alambre resistivo enrollado en un núcleo aislante. Ideales para manejar altas potencias.</li>
+                <li><strong>Resistencias de óxido metálico:</strong> Son altamente estables y resistentes a la temperatura, utilizadas en aplicaciones de alta exigencia.</li>
+            </ul>
             <h3>Tipos de Capacitores</h3>
-            <p>Los capacitores pueden ser electrolíticos, cerámicos, de tantalio y de película. Se usan para almacenar carga eléctrica temporalmente.</p>
-            <p>Los capacitores cerámicos se utilizan en circuitos de alta frecuencia, mientras que los electrolíticos son ideales para circuitos de alimentación debido a su alta capacidad.</p>
-            
+            <p>Los capacitores almacenan energía en un campo eléctrico. Se clasifican en:</p>
+            <ul>
+                <li><strong>Electrolíticos:</strong> Tienen una alta capacitancia y se usan en fuentes de alimentación para estabilizar voltajes.</li>
+                <li><strong>Cerámicos:</strong> Son pequeños, de baja capacitancia y adecuados para circuitos de radiofrecuencia.</li>
+                <li><strong>De tantalio:</strong> Ofrecen alta estabilidad y confiabilidad en circuitos críticos.</li>
+                <li><strong>De película:</strong> Usados en circuitos de audio y filtrado de señales debido a su baja distorsión.</li>
+            </ul>
             <h3>Tipos de Inductores</h3>
-            <p>Los inductores pueden ser de núcleo de aire, ferrita o hierro. Se emplean en filtros y circuitos de alta frecuencia.</p>
-            <p>Los inductores de ferrita son comunes en circuitos de supresión de ruido, mientras que los de núcleo de hierro se usan en aplicaciones de alta potencia.</p>
+            <p>Los inductores almacenan energía en un campo magnético y se usan en filtrado y conversión de señales.</p>
+            <ul>
+                <li><strong>De núcleo de aire:</strong> Utilizados en aplicaciones de radiofrecuencia por su baja pérdida.</li>
+                <li><strong>De ferrita:</strong> Empleados en fuentes de alimentación conmutadas y filtros de señal.</li>
+                <li><strong>De núcleo de hierro:</strong> Soportan altas corrientes y se encuentran en transformadores y fuentes de alimentación.</li>
+            </ul>
+            <p><strong>Referencias:</strong></p>
+            <ul>
+                <li>Horowitz, P., & Hill, W. (2015). <i>The Art of Electronics</i>. Cambridge University Press.</li>
+                <li>Boylestad, R. (2012). <i>Introductory Circuit Analysis</i>. Pearson Education.</li>
+                <li>Malvino, A. (2007). <i>Principios de Electrónica</i>. McGraw Hill.</li>
+            </ul>
         </div>
         
         <div id="investigacion2" class="hidden">
             <h2>Glosario de Términos</h2>
             <ul>
-                <li><strong>Amperio (A):</strong> Unidad de medida de la corriente eléctrica.</li>
-                <li><strong>Voltaje (V):</strong> Diferencia de potencial entre dos puntos.</li>
-                <li><strong>Resistencia (Ω):</strong> Oposición al paso de corriente.</li>
-                <li><strong>Capacitor:</strong> Componente que almacena carga eléctrica.</li>
-                <li><strong>Inductor:</strong> Componente que almacena energía en un campo magnético.</li>
-                <li><strong>Diodo:</strong> Componente que permite el paso de corriente en una sola dirección.</li>
-                <li><strong>Transistor:</strong> Dispositivo semiconductor usado como amplificador o interruptor.</li>
-                <li><strong>Frecuencia:</strong> Número de ciclos de una señal en un segundo.</li>
-                <li><strong>Impedancia:</strong> Resistencia en un circuito de corriente alterna.</li>
-                <li><strong>Potencia:</strong> Energía transferida por unidad de tiempo.</li>
-                <li><strong>Bobina:</strong> Componente que almacena energía en un campo magnético.</li>
-                <li><strong>Transformador:</strong> Dispositivo que cambia los niveles de voltaje.</li>
-                <li><strong>Rectificador:</strong> Convierte corriente alterna en corriente continua.</li>
-                <li><strong>Microcontrolador:</strong> Pequeño computador en un chip.</li>
-                <li><strong>Osciloscopio:</strong> Instrumento para visualizar señales eléctricas.</li>
-                <li><strong>Reóstato:</strong> Resistencia variable.</li>
-                <li><strong>Corriente alterna (AC):</strong> Flujo de electricidad que cambia de dirección periódicamente.</li>
-                <li><strong>Corriente continua (DC):</strong> Flujo de electricidad en una sola dirección.</li>
-                <li><strong>Fotodiodo:</strong> Diodo que responde a la luz.</li>
-                <li><strong>Fuente de alimentación:</strong> Dispositivo que proporciona energía eléctrica.</li>
+                <li>Amperio (A): Unidad de medida de la corriente eléctrica.</li>
+                <li>Voltaje (V): Diferencia de potencial entre dos puntos.</li>
+                <li>Resistencia (Ω): Oposición al paso de corriente.</li>
+                <li>Capacitor: Componente que almacena carga eléctrica.</li>
+                <li>Inductor: Componente que almacena energía en un campo magnético.</li>
+                <li>Diodo: Permite el paso de corriente en una sola dirección.</li>
+                <li>Transistor: Dispositivo semiconductor usado como amplificador o interruptor.</li>
+                <li>Potencia: Energía transferida por unidad de tiempo.</li>
+                <li>Frecuencia: Número de ciclos de una señal en un segundo.</li>
+                <li>Impedancia: Resistencia en circuitos de corriente alterna.</li>
+                <li>Transformador: Dispositivo que cambia los niveles de voltaje.</li>
+                <li>Rectificador: Convierte corriente alterna en corriente continua.</li>
+                <li>Relé: Interruptor electromagnético.</li>
+                <li>Bobina: Componente que almacena energía en un campo magnético.</li>
+                <li>Osciloscopio: Instrumento para visualizar señales eléctricas.</li>
+                <li>Microcontrolador: Pequeño computador en un chip.</li>
+                <li>LED: Diodo emisor de luz.</li>
+                <li>Resistencia térmica: Sensor de temperatura.</li>
+                <li>Oscilador: Generador de señales periódicas.</li>
+                <li>Fotodiodo: Diodo sensible a la luz.</li>
+                <li>Fuente de alimentación: Dispositivo que proporciona energía eléctrica.</li>
+                <li>Amplificador: Dispositivo que aumenta la señal eléctrica.</li>
+                <li>Multímetro: Herramienta de medición eléctrica.</li>
+                <li>Frecuencia de corte: Punto donde la respuesta de un filtro cae un 3dB.</li>
+                <li>Modulación: Proceso de modificar una señal para transmitir información.</li>
+                <li>Semiconductor: Material con conductividad variable.</li>
+                <li>Código de colores: Método para identificar valores de resistencias.</li>
+                <li>Regulador de voltaje: Dispositivo que mantiene un voltaje constante.</li>
+                <li>Tensión nominal: Voltaje recomendado para un componente.</li>
+                <li>Polaridad: Diferenciación de polos positivo y negativo en un circuito.</li>
+                <li>Potenciómetro: Resistencia ajustable.</li>
+                <li>Carga eléctrica: Propiedad fundamental de partículas subatómicas.</li>
+                <li>Señal analógica: Señal continua en el tiempo.</li>
+                <li>Señal digital: Señal discreta en valores binarios.</li>
+                <li>Relación señal-ruido: Medida de calidad de una señal.</li>
+                <li>Corriente alterna (AC): Flujo de electricidad que cambia de dirección.</li>
+                <li>Corriente continua (DC): Flujo de electricidad en una sola dirección.</li>
+                <li>Cortocircuito: Conexión no deseada entre conductores.</li>
+                <li>Electrodo: Conductor por donde entra o sale la corriente.</li>
+                <li>Generador: Dispositivo que convierte energía mecánica en eléctrica.</li>
+                <li>Magnetismo: Fenómeno asociado a los imanes y corrientes eléctricas.</li>
+                <li>Neutro: Conductor de referencia en sistemas eléctricos.</li>
+                <li>Resistencia variable: Dispositivo cuyo valor de resistencia puede cambiar.</li>
+                <li>Supresor de picos: Dispositivo que protege contra sobrevoltajes.</li>
+                <li>Varistor: Componente que limita picos de voltaje.</li>
+                <li>Zener: Diodo que mantiene un voltaje constante en polarización inversa.</li>
+                <li>Transductor: Dispositivo que convierte una forma de energía en otra.</li>
+                <li>Sensor: Dispositivo que detecta cambios físicos en su entorno.</li>
             </ul>
             <p>Descarga el glosario completo en PDF: <a href="glosario_completo.pdf" target="_blank">Aquí</a></p>
         </div>
     </div>
-
     <script>
         function mostrarInvestigacion(id) {
             document.getElementById('investigacion1').classList.add('hidden');
