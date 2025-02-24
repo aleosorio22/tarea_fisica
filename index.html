@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigaciones Electrónica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: auto;
+        }
+        button {
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .hidden {
+            display: none;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        ul {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Investigaciones de Electricidad y Electrónica</h1>
+        <button onclick="mostrarInvestigacion('investigacion1')">Tipos de Componentes Electrónicos</button>
+        <button onclick="mostrarInvestigacion('investigacion2')">Glosario de Términos</button>
+        
+        <div id="investigacion1" class="hidden">
+            <h2>Tipos de Componentes Electrónicos</h2>
+            <h3>Tipos de Resistencias</h3>
+            <p>Las resistencias pueden ser de carbón, película metálica, de hilo bobinado y de óxido metálico. Se utilizan para limitar la corriente en circuitos eléctricos.</p>
+            <p>Las resistencias de película metálica son más precisas, mientras que las de carbón son más económicas. Las de hilo bobinado son ideales para manejar altas potencias.</p>
+            
+            <h3>Tipos de Capacitores</h3>
+            <p>Los capacitores pueden ser electrolíticos, cerámicos, de tantalio y de película. Se usan para almacenar carga eléctrica temporalmente.</p>
+            <p>Los capacitores cerámicos se utilizan en circuitos de alta frecuencia, mientras que los electrolíticos son ideales para circuitos de alimentación debido a su alta capacidad.</p>
+            
+            <h3>Tipos de Inductores</h3>
+            <p>Los inductores pueden ser de núcleo de aire, ferrita o hierro. Se emplean en filtros y circuitos de alta frecuencia.</p>
+            <p>Los inductores de ferrita son comunes en circuitos de supresión de ruido, mientras que los de núcleo de hierro se usan en aplicaciones de alta potencia.</p>
+        </div>
+        
+        <div id="investigacion2" class="hidden">
+            <h2>Glosario de Términos</h2>
+            <ul>
+                <li><strong>Amperio (A):</strong> Unidad de medida de la corriente eléctrica.</li>
+                <li><strong>Voltaje (V):</strong> Diferencia de potencial entre dos puntos.</li>
+                <li><strong>Resistencia (Ω):</strong> Oposición al paso de corriente.</li>
+                <li><strong>Capacitor:</strong> Componente que almacena carga eléctrica.</li>
+                <li><strong>Inductor:</strong> Componente que almacena energía en un campo magnético.</li>
+                <li><strong>Diodo:</strong> Componente que permite el paso de corriente en una sola dirección.</li>
+                <li><strong>Transistor:</strong> Dispositivo semiconductor usado como amplificador o interruptor.</li>
+                <li><strong>Frecuencia:</strong> Número de ciclos de una señal en un segundo.</li>
+                <li><strong>Impedancia:</strong> Resistencia en un circuito de corriente alterna.</li>
+                <li><strong>Potencia:</strong> Energía transferida por unidad de tiempo.</li>
+                <li><strong>Bobina:</strong> Componente que almacena energía en un campo magnético.</li>
+                <li><strong>Transformador:</strong> Dispositivo que cambia los niveles de voltaje.</li>
+                <li><strong>Rectificador:</strong> Convierte corriente alterna en corriente continua.</li>
+                <li><strong>Microcontrolador:</strong> Pequeño computador en un chip.</li>
+                <li><strong>Osciloscopio:</strong> Instrumento para visualizar señales eléctricas.</li>
+                <li><strong>Reóstato:</strong> Resistencia variable.</li>
+                <li><strong>Corriente alterna (AC):</strong> Flujo de electricidad que cambia de dirección periódicamente.</li>
+                <li><strong>Corriente continua (DC):</strong> Flujo de electricidad en una sola dirección.</li>
+                <li><strong>Fotodiodo:</strong> Diodo que responde a la luz.</li>
+                <li><strong>Fuente de alimentación:</strong> Dispositivo que proporciona energía eléctrica.</li>
+            </ul>
+            <p>Descarga el glosario completo en PDF: <a href="glosario_completo.pdf" target="_blank">Aquí</a></p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarInvestigacion(id) {
+            document.getElementById('investigacion1').classList.add('hidden');
+            document.getElementById('investigacion2').classList.add('hidden');
+            document.getElementById(id).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
